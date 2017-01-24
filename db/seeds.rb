@@ -8,5 +8,16 @@
 
 require 'csv'
 
-csv_text = File.read(Rails.root.join('lib, 'seeds', 'unit_test.csv'))
-puts csv_text
+csv_text = File.read(Rails.root.join('lib', 'seeds', 'unit_test.csv'))
+csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
+csv.each do |row|
+    t = Import.new
+    t.row_id = row['row_id']
+    t.text = row['text']
+    t.save
+    
+puts "#{t.row_id}, #{t.text} saved"
+
+end
+
+puts "There are now #{Import.count} rows in the transaction table"
