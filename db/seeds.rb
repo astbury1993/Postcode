@@ -15,9 +15,17 @@ csv.each do |row|
     t.row_id = row['row_id']
     t.text = row['text']
     t.save
+    if t.save
+        puts "#{t.row_id}, #{t.text} saved"
+        else
+        u = Failed.new
+        u.row_id = row['row_id']
+        u.text = row['text']
+        u.save
+        puts "#{u.row_id}, #{u.text} failed"
+    end
     
-puts "#{t.row_id}, #{t.text} saved"
-
 end
 
-puts "There are now #{Import.count} rows in the transaction table"
+puts "There are now #{Import.count} rows in the import table"
+puts "There are now #{Failed.count} rows in the failed table"

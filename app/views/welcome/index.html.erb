@@ -1,2 +1,9 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Entries in Import Model</h1>
+
+
+<ul>
+<%= @imports.each do |p| %>
+<li><%= p.row_id%></li>
+<li><%= p.text%></li>
+<% end %>
+</ul>  		
