@@ -9,4 +9,8 @@ class ImportsController < ApplicationController
         Import.import(params[:file])
     end
     
+    def show
+        
+    end
+    
 end
