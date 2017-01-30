@@ -1,0 +1,5 @@
+<%- headers = ['row_id', 'text'] -%>
+<%= CSV.generate_line headers %>
+<%- @faileds.each do |failed| -%>
+<%= CSV.generate_line([failed.row_id, failed.text]) -%>
+<%- end -%>

@@ -563,3 +563,592 @@ Migrating to CreateFaileds (20170126190159)
   [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
   [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "imports"
   [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "faileds"[0m
+
+
+Started GET "/" for ::1 at 2017-01-30 19:29:23 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (0.9ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (53.4ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 1.9ms)
+
+ActionView::Template::Error (undefined method `faileds_path' for #<#<Class:0x007fd0ff6b9ef0>:0x007fd0ff6b9388>):
+     9: </ul>  		
+    10: </br>
+    11: 
+    12: <%= link_to 'Download Failed Import Records', faileds_path(format: :csv) %>
+  app/views/welcome/index.html.erb:12:in `_app_views_welcome_index_html_erb__4535068060007114692_70267807549040'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (78.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (183.8ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:34:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (0.7ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (41.6ms)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (undefined method `faileds_path' for #<#<Class:0x007fc96d4bbc78>:0x007fc96d4bad00>):
+     9: </ul>  		
+    10: </br>
+    11: 
+    12: <%= link_to 'Download Failed Import Records', faileds_path(format: :csv) %>
+  app/views/welcome/index.html.erb:12:in `_app_views_welcome_index_html_erb__120581926886306448_70251549279080'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.3ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (126.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (90.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (195.4ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:34:32 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mImport Load (0.2ms)[0m  [1mSELECT "imports".* FROM "imports"[0m
+  Rendered welcome/index.html.erb within layouts/application (31.1ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `faileds_path' for #<#<Class:0x007fc96d4bbc78>:0x007fc969e11790>):
+     9: </ul>  		
+    10: </br>
+    11: 
+    12: <%= link_to 'Download Failed Import Records', faileds_path(format: :csv) %>
+  app/views/welcome/index.html.erb:12:in `_app_views_welcome_index_html_erb__120581926886306448_70251549279080'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (84.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (182.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:42:17 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (1.4ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (65.7ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 2.3ms)
+
+ActionView::Template::Error (undefined method `faileds_path' for #<#<Class:0x007fc96ea333f8>:0x007fc96ea32818>):
+     9: </ul>  		
+    10: </br>
+    11: 
+    12: <%= link_to 'Download Failed Import Records', faileds_path(format: :csv) %>
+  app/views/welcome/index.html.erb:12:in `_app_views_welcome_index_html_erb__120581926886306448_70251549279080'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (111.3ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (71.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (156.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:44:14 +0000
+
+NameError (undefined local variable or method `map' for #<ActionDispatch::Routing::Mapper:0x007fc96d772700>):
+  config/routes.rb:7:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (66.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (143.6ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:45:23 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mImport Load (1.2ms)[0m  [1mSELECT "imports".* FROM "imports"[0m
+  Rendered welcome/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 1089ms (Views: 1075.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/import.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-01-30 19:45:24 +0000
+
+
+Started GET "/assets/failed.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-01-30 19:45:24 +0000
+
+
+Started GET "/assets/import.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-01-30 19:45:24 +0000
+
+
+Started GET "/assets/failed.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-01-30 19:45:24 +0000
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 19:47:55 +0000
+
+ActionController::RoutingError (uninitialized constant FailedsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (64.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (147.5ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:49:40 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (1.5ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (73.4ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 2.0ms)
+
+ActionView::Template::Error (undefined method `faileds_path' for #<#<Class:0x007fc96ea80ab8>:0x007fc96ea80018>):
+     9: </ul>  		
+    10: </br>
+    11: 
+    12: <%= link_to 'Download Failed Import Records', faileds_path(format: :csv) %>
+  app/views/welcome/index.html.erb:12:in `_app_views_welcome_index_html_erb__120581926886306448_70251549279080'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (85.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (184.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:51:29 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mImport Load (2.5ms)[0m  [1mSELECT "imports".* FROM "imports"[0m
+  Rendered welcome/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 144ms (Views: 132.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 19:51:32 +0000
+
+ActionController::RoutingError (uninitialized constant FailedsController):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (121.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.3ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (69.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (169.8ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:54:26 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (0.6ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 913ms (Views: 897.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:54:27 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mImport Load (0.2ms)[0m  [1mSELECT "imports".* FROM "imports"[0m
+  Rendered welcome/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 216ms (Views: 214.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/imports.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-01-30 19:54:27 +0000
+
+
+Started GET "/assets/faileds.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2017-01-30 19:54:27 +0000
+
+
+Started GET "/assets/imports.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-01-30 19:54:27 +0000
+
+
+Started GET "/assets/faileds.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2017-01-30 19:54:27 +0000
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 19:54:30 +0000
+Processing by FailedsController#index as CSV
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::MissingTemplate (Missing template faileds/index, application/index with {:locale=>[:en], :formats=>[:csv], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/Curtis/Postcode/app/views"
+):
+  actionview (4.2.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.1) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Curtis/.tokaido/Rubies/2.2.2-p95/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (94.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (79.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (178.9ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:55:06 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (0.4ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 121ms (Views: 119.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 19:55:08 +0000
+Processing by FailedsController#index as CSV
+  Rendered faileds/index.csv.erb (7.1ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::CSV):
+    1: <%- headers = ['row_id', 'text'] -%>
+    2: <%= CSV.generate_line headers %>
+    3: <%- @faileds.each do |failed| -%>
+    4: <%= CSV.generate_line([failed.row_id, failed.text]) -%>
+    5: <%- end -%>
+  app/views/faileds/index.csv.erb:2:in `_app_views_faileds_index_csv_erb__1394807290057534739_70261547844100'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (72.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (155.7ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:58:23 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mImport Load (1.3ms)[0m  [1mSELECT "imports".* FROM "imports"[0m
+  Rendered welcome/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 324ms (Views: 299.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 19:58:23 +0000
+Processing by WelcomeController#index as HTML
+  [1m[35mImport Load (0.4ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 148ms (Views: 146.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 19:58:25 +0000
+Processing by FailedsController#index as CSV
+  Rendered faileds/index.csv.erb (7.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::CSV):
+    1: <%- headers = ['row_id', 'text'] -%>
+    2: <%= CSV.generate_line headers %>
+    3: <%- @faileds.each do |failed| -%>
+    4: <%= CSV.generate_line([failed.row_id, failed.text]) -%>
+    5: <%- end -%>
+  app/views/faileds/index.csv.erb:2:in `_app_views_faileds_index_csv_erb__1394807290057534739_70261547844100'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (117.4ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (81.4ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (181.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 20:04:28 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by FailedsController#index as CSV
+  [1m[35mFailed Load (0.8ms)[0m  SELECT "faileds".* FROM "faileds"
+  Rendered faileds/index.csv.erb (24.7ms)
+Completed 200 OK in 68ms (Views: 48.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 20:04:34 +0000
+Processing by WelcomeController#index as HTML
+  [1m[36mImport Load (1.2ms)[0m  [1mSELECT "imports".* FROM "imports"[0m
+  Rendered welcome/index.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 607ms (Views: 598.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 20:04:37 +0000
+Processing by FailedsController#index as CSV
+  [1m[35mFailed Load (0.4ms)[0m  SELECT "faileds".* FROM "faileds"
+  Rendered faileds/index.csv.erb (7.0ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.4ms)

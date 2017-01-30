@@ -1,0 +1,2 @@
+module FailedsHelper
+end
