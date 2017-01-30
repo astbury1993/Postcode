@@ -1,12 +1,12 @@
 <h1>Entries in Import Model</h1>
 
 
-<ul>
-<%= @imports.each do |p| %>
-<li><%= p.row_id%></li>
-<li><%= p.text%></li>
-<% end %>
-</ul>  		
+<h4>Import from CSV</h4>
+  <%= form_tag import_imports_path, multipart: true do %>
+    <%= file_field_tag :file %>
+    <%= submit_tag "Import CSV" %>
+  <% end %>
+  
 </br>
 
 <%= link_to 'Download Failed Import Records', faileds_path(format: :csv) %>

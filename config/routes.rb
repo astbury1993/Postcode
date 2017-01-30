@@ -6,7 +6,11 @@ Rails.application.routes.draw do
   
   post '/faileds' => 'faileds#index'
   resources :faileds
-  resources :imports
+  3
+  resources :imports do collection { post :import }
+      end
+  
+  
   
 
   # The priority is based upon order of creation: first created -> highest priority.

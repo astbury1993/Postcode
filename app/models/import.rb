@@ -13,4 +13,28 @@ class Import < ActiveRecord::Base
     
     # ensures the text being imported is not blank
     validates :text, presence: true, format: { with: POST_REGEX }
+    
+    require 'csv'
+    
+    def self.import(file)
+    csv = CSV.parse(file.path, :headers => true, :encoding => 'ISO-8859-1')
+    csv.each do |row|
+    t = Import.new
+    t.row_id = row['row_id']
+    t.text = row['text']
+    t.save
+    if t.save
+
+    else
+    u = Failed.new
+    u.row_id = row['row_id']
+    u.text = row['text']
+    u.save
+
+end
+end
+
+
+    end
+
 end
