@@ -3,7 +3,6 @@ class Import < ActiveRecord::Base
     require 'csv'
     
     def self.import(file)
-    import.
     # csv = CSV.parse(file.path, :headers => true, :encoding => 'ISO-8859-1')
     CSV.foreach(file.path, headers: true) do |row|
     t = Import.new

@@ -2239,3 +2239,261 @@ NameError (undefined local variable or method `delete_all' for #<ImportsControll
   Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.1ms)
   Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (110.1ms)
 Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f9432390a58 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f94323901c0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f9432379d80 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2017-01-30 21:11:03 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 264ms (Views: 252.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-30 21:11:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 140ms (Views: 138.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-30 21:11:09 +0000
+Processing by FailedsController#index as CSV
+  [1m[35mFailed Load (0.5ms)[0m  SELECT "faileds".* FROM "faileds"
+  Rendered faileds/index.csv.erb (14.2ms)
+Completed 200 OK in 37ms (Views: 23.1ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/imports/import" for ::1 at 2017-01-31 07:58:43 +0000
+Processing by ImportsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oC/wLp+eJXfx/2YHdqvSl7Q8ExOfFW9yGR5AqfIG3WWZTqPK9JSN1eLD25v6lMJPWaWBwrWyd99aahlFy7++ZA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f94367814d8 @tempfile=#<Tempfile:/var/folders/wt/jl7lkbbd3_33q_c3t927w0p00000gn/T/RackMultipart20170131-55754-1bd9tde.csv>, @original_filename="unit_test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"unit_test.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Import CSV"}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/import.rb:5:in `import'
+  app/models/import.rb:6:in `import'
+  app/controllers/imports_controller.rb:9:in `import'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (13.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.6ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (122.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f9432390a58 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f94323901c0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f9432379d80 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2017-01-31 07:59:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 177ms (Views: 174.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-31 07:59:07 +0000
+Processing by FailedsController#index as CSV
+  [1m[36mFailed Load (1.6ms)[0m  [1mSELECT "faileds".* FROM "faileds"[0m
+  Rendered faileds/index.csv.erb (16.2ms)
+Completed 200 OK in 27ms (Views: 19.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/" for ::1 at 2017-01-31 12:30:53 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 214ms (Views: 197.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/imports/import" for ::1 at 2017-01-31 12:30:59 +0000
+Processing by ImportsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yj2Vc/rjbijhPtuqEAMYkhQAeC+o1k4XFeGumoCEB/PzXMaXkenGivICZjacPAhK+Znq/oJxVrpWlfd2uT1k8g==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f94356e46e8 @tempfile=#<Tempfile:/var/folders/wt/jl7lkbbd3_33q_c3t927w0p00000gn/T/RackMultipart20170131-55754-1t0fsbs.csv>, @original_filename="unit_test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"unit_test.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Import CSV"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/import.rb:5:in `import'
+  app/models/import.rb:6:in `import'
+  app/controllers/imports_controller.rb:8:in `import'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.4ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.5ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f9432390a58 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f94323901c0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f9432379d80 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2017-01-31 12:32:36 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 156ms (Views: 155.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/imports/import" for ::1 at 2017-01-31 12:32:43 +0000
+Processing by ImportsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pga92dv7P/yP0sS+vlpnXzS0Y95gD51rALpXlhG8a0YHZ+49sPGXXpzueSIyZXeH2S3xD0qohcZDzg56KAUIRw==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f94319ec240 @tempfile=#<Tempfile:/var/folders/wt/jl7lkbbd3_33q_c3t927w0p00000gn/T/RackMultipart20170131-55754-1gx5tlx.csv>, @original_filename="unit_test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"unit_test.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Import CSV"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/models/import.rb:5:in `import'
+  app/models/import.rb:6:in `import'
+  app/controllers/imports_controller.rb:8:in `import'
+
+
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.1ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Curtis/.tokaido/Gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (120.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x007f9432390a58 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x007f94323901c0 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x007f9432379d80 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started GET "/" for ::1 at 2017-01-31 12:35:47 +0000
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 114ms (Views: 110.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/imports/import" for ::1 at 2017-01-31 12:35:54 +0000
+Processing by ImportsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FLO9T0JEk3Va+dHvf8TJtuzWXfdgnzUDvk+SFUNkm9Qt0u6rKU4710nFbHPz+9luAU/PJko4La79O8v5et341Q==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007f94361b13a0 @tempfile=#<Tempfile:/var/folders/wt/jl7lkbbd3_33q_c3t927w0p00000gn/T/RackMultipart20170131-55754-1ovm5c5.csv>, @original_filename="unit_test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"unit_test.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Import CSV"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "$%± ()()"], ["created_at", "2017-01-31 12:35:54.599942"], ["updated_at", "2017-01-31 12:35:54.599942"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "XX XXX"], ["created_at", "2017-01-31 12:35:54.612531"], ["updated_at", "2017-01-31 12:35:54.612531"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "A1 9A"], ["created_at", "2017-01-31 12:35:54.622447"], ["updated_at", "2017-01-31 12:35:54.622447"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "LS44PL"], ["created_at", "2017-01-31 12:35:54.631616"], ["updated_at", "2017-01-31 12:35:54.631616"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "Q1A 9AA"], ["created_at", "2017-01-31 12:35:54.641295"], ["updated_at", "2017-01-31 12:35:54.641295"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "V1A 9AA"], ["created_at", "2017-01-31 12:35:54.654257"], ["updated_at", "2017-01-31 12:35:54.654257"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "X1A 9BB"], ["created_at", "2017-01-31 12:35:54.663503"], ["updated_at", "2017-01-31 12:35:54.663503"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "LI10 3QP"], ["created_at", "2017-01-31 12:35:54.667450"], ["updated_at", "2017-01-31 12:35:54.667450"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "LJ10 3QP"], ["created_at", "2017-01-31 12:35:54.673630"], ["updated_at", "2017-01-31 12:35:54.673630"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "LZ10 3QP"], ["created_at", "2017-01-31 12:35:54.678966"], ["updated_at", "2017-01-31 12:35:54.678966"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "A9Q 9AA"], ["created_at", "2017-01-31 12:35:54.690867"], ["updated_at", "2017-01-31 12:35:54.690867"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "AA9C 9AA"], ["created_at", "2017-01-31 12:35:54.700478"], ["updated_at", "2017-01-31 12:35:54.700478"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "FY10 4PL"], ["created_at", "2017-01-31 12:35:54.704864"], ["updated_at", "2017-01-31 12:35:54.704864"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "SO1 4QQ"], ["created_at", "2017-01-31 12:35:54.709882"], ["updated_at", "2017-01-31 12:35:54.709882"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "EC1A 1BB"], ["created_at", "2017-01-31 12:35:54.714675"], ["updated_at", "2017-01-31 12:35:54.714675"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "W1A 0AX"], ["created_at", "2017-01-31 12:35:54.728493"], ["updated_at", "2017-01-31 12:35:54.728493"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "M1 1AE"], ["created_at", "2017-01-31 12:35:54.732522"], ["updated_at", "2017-01-31 12:35:54.732522"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "B33 8TH"], ["created_at", "2017-01-31 12:35:54.737566"], ["updated_at", "2017-01-31 12:35:54.737566"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "CR2 6XH"], ["created_at", "2017-01-31 12:35:54.742388"], ["updated_at", "2017-01-31 12:35:54.742388"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "DN55 1PT"], ["created_at", "2017-01-31 12:35:54.747028"], ["updated_at", "2017-01-31 12:35:54.747028"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "GIR 0AA"], ["created_at", "2017-01-31 12:35:54.751950"], ["updated_at", "2017-01-31 12:35:54.751950"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "SO10 9AA"], ["created_at", "2017-01-31 12:35:54.756313"], ["updated_at", "2017-01-31 12:35:54.756313"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "FY9 9AA"], ["created_at", "2017-01-31 12:35:54.760596"], ["updated_at", "2017-01-31 12:35:54.760596"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "imports" ("text", "created_at", "updated_at") VALUES (?, ?, ?)  [["text", "WC1A 9AA"], ["created_at", "2017-01-31 12:35:54.765387"], ["updated_at", "2017-01-31 12:35:54.765387"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered imports/import.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 330ms (Views: 131.3ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-31 12:35:56 +0000
+Processing by FailedsController#index as CSV
+  [1m[35mFailed Load (0.2ms)[0m  SELECT "faileds".* FROM "faileds"
+  Rendered faileds/index.csv.erb (6.3ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)

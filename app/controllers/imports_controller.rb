@@ -4,7 +4,6 @@ class ImportsController < ApplicationController
     end
     
     require 'csv'
-    
     def import
         Import.import(params[:file])
     end
