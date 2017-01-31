@@ -5,6 +5,8 @@ class ImportsController < ApplicationController
     
     require 'csv'
     def import
+        Import.delete_all
+        Failed.delete_all
         Import.import(params[:file])
     end
     
