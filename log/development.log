@@ -3456,3 +3456,173 @@ Processing by FailedsController#index as CSV
   [1m[36mFailed Load (0.2ms)[0m  [1mSELECT "faileds".* FROM "faileds"[0m
   Rendered faileds/index.csv.erb (6.1ms)
 Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-01-31 18:10:27 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 575ms (Views: 559.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/imports/import" for ::1 at 2017-01-31 18:10:35 +0000
+Processing by ImportsController#import as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+rKMwBJ4pOlRAimVHZOSYd5byzDqp8aHccd4un2Y+GvD098keXIMS0I+lAmRrIK5M8JZ4cAA3ioysyFWRCGbag==", "file"=>#<ActionDispatch::Http::UploadedFile:0x007fd67edf8db8 @tempfile=#<Tempfile:/var/folders/wt/jl7lkbbd3_33q_c3t927w0p00000gn/T/RackMultipart20170131-60264-1169gwt.csv>, @original_filename="unit_test.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"unit_test.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"Import CSV"}
+  [1m[35mSQL (1.5ms)[0m  DELETE FROM "imports"
+  [1m[36mSQL (1.4ms)[0m  [1mDELETE FROM "faileds"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 1], ["text", "$%± ()()"], ["created_at", "2017-01-31 18:10:35.170224"], ["updated_at", "2017-01-31 18:10:35.170224"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 2], ["text", "XX XXX"], ["created_at", "2017-01-31 18:10:35.187885"], ["updated_at", "2017-01-31 18:10:35.187885"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 3], ["text", "A1 9A"], ["created_at", "2017-01-31 18:10:35.198965"], ["updated_at", "2017-01-31 18:10:35.198965"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 4], ["text", "LS44PL"], ["created_at", "2017-01-31 18:10:35.211143"], ["updated_at", "2017-01-31 18:10:35.211143"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 5], ["text", "Q1A 9AA"], ["created_at", "2017-01-31 18:10:35.221219"], ["updated_at", "2017-01-31 18:10:35.221219"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 6], ["text", "V1A 9AA"], ["created_at", "2017-01-31 18:10:35.230617"], ["updated_at", "2017-01-31 18:10:35.230617"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 7], ["text", "X1A 9BB"], ["created_at", "2017-01-31 18:10:35.242993"], ["updated_at", "2017-01-31 18:10:35.242993"]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 8], ["text", "LI10 3QP"], ["created_at", "2017-01-31 18:10:35.252616"], ["updated_at", "2017-01-31 18:10:35.252616"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 9], ["text", "LJ10 3QP"], ["created_at", "2017-01-31 18:10:35.260746"], ["updated_at", "2017-01-31 18:10:35.260746"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 10], ["text", "LZ10 3QP"], ["created_at", "2017-01-31 18:10:35.269211"], ["updated_at", "2017-01-31 18:10:35.269211"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 11], ["text", "A9Q 9AA"], ["created_at", "2017-01-31 18:10:35.290125"], ["updated_at", "2017-01-31 18:10:35.290125"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 12], ["text", "AA9C 9AA"], ["created_at", "2017-01-31 18:10:35.310964"], ["updated_at", "2017-01-31 18:10:35.310964"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 13], ["text", "FY10 4PL"], ["created_at", "2017-01-31 18:10:35.316665"], ["updated_at", "2017-01-31 18:10:35.316665"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 14], ["text", "SO1 4QQ"], ["created_at", "2017-01-31 18:10:35.325138"], ["updated_at", "2017-01-31 18:10:35.325138"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 15], ["text", "EC1A 1BB"], ["created_at", "2017-01-31 18:10:35.354931"], ["updated_at", "2017-01-31 18:10:35.354931"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (1.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "faileds" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 16], ["text", "W1A 0AX"], ["created_at", "2017-01-31 18:10:35.373306"], ["updated_at", "2017-01-31 18:10:35.373306"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 17], ["text", "M1 1AE"], ["created_at", "2017-01-31 18:10:35.378738"], ["updated_at", "2017-01-31 18:10:35.378738"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 18], ["text", "B33 8TH"], ["created_at", "2017-01-31 18:10:35.387567"], ["updated_at", "2017-01-31 18:10:35.387567"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 19], ["text", "CR2 6XH"], ["created_at", "2017-01-31 18:10:35.395804"], ["updated_at", "2017-01-31 18:10:35.395804"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 20], ["text", "DN55 1PT"], ["created_at", "2017-01-31 18:10:35.404080"], ["updated_at", "2017-01-31 18:10:35.404080"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 21], ["text", "GIR 0AA"], ["created_at", "2017-01-31 18:10:35.411685"], ["updated_at", "2017-01-31 18:10:35.411685"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 22], ["text", "SO10 9AA"], ["created_at", "2017-01-31 18:10:35.419867"], ["updated_at", "2017-01-31 18:10:35.419867"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["row_id", 23], ["text", "FY9 9AA"], ["created_at", "2017-01-31 18:10:35.425743"], ["updated_at", "2017-01-31 18:10:35.425743"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "imports" ("row_id", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["row_id", 24], ["text", "WC1A 9AA"], ["created_at", "2017-01-31 18:10:35.435813"], ["updated_at", "2017-01-31 18:10:35.435813"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  Rendered imports/import.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 541ms (Views: 219.0ms | ActiveRecord: 49.9ms)
+
+
+Started GET "/imports.csv" for ::1 at 2017-01-31 18:10:37 +0000
+Processing by ImportsController#index as CSV
+  [1m[35mImport Load (0.3ms)[0m  SELECT "imports".* FROM "imports"
+  Rendered imports/index.csv.erb (9.0ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/faileds.csv" for ::1 at 2017-01-31 18:10:46 +0000
+Processing by FailedsController#index as CSV
+  [1m[36mFailed Load (0.3ms)[0m  [1mSELECT "faileds".* FROM "faileds"[0m
+  Rendered faileds/index.csv.erb (11.0ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms)
