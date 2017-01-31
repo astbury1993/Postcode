@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   
   post '/faileds' => 'faileds#index'
   resources :faileds
-  3
+  
+  post '/imports' => 'imports#index'
+  resources :imports
+  
   resources :imports do collection { post :import }
       end
   

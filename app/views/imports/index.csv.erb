@@ -1,5 +1,5 @@
 <%- headers = ['row_id', 'text'] -%>
 <%= CSV.generate_line headers %>
-<%- @faileds.each do |failed| -%>
-<%= CSV.generate_line([failed.row_id, failed.text]) -%>
+<%- @imports.each do |import| -%>
+<%= CSV.generate_line([import.row_id, import.text]) -%>
 <%- end -%>

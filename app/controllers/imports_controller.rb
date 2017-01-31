@@ -1,6 +1,14 @@
 class ImportsController < ApplicationController
+    
     def index
         @imports = Import.all
+        respond_to do |format|
+            format.html
+            format.csv do
+                headers['Content-Disposition'] = "attachment; filename=\"succeeded_validation\""
+                headers['Content-type'] ||= 'text/csv'
+            end
+        end
     end
     
     require 'csv'
@@ -13,5 +21,7 @@ class ImportsController < ApplicationController
     def show
         
     end
+    
+    
     
 end
