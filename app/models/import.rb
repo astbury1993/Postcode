@@ -20,6 +20,7 @@ def self.import(file)
     u.save
 end
 end
+end
 
 
 # Postcode Validation including definition of allowed format
