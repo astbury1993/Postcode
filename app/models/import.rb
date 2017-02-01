@@ -7,13 +7,13 @@ class Import < ActiveRecord::Base
     CSV.foreach(file.path, headers: true) do |row|
     t = Import.new
     t.row_id = row['row_id']
-    t.text = row['text']
+    t.text = row['postcode']
     t.save
     if t.save
     else
     u = Failed.new
     u.row_id = row['row_id']
-    u.text = row['text']
+    u.text = row['postcode']
     u.save
 end
 end
