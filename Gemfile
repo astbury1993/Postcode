@@ -11,6 +11,7 @@ end
 
 group :production do
 gem 'pg'
+gem 'puma'
 end
 
 gem 'smarter_csv', '~> 1.1'
