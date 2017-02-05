@@ -7,8 +7,7 @@
     <%= submit_tag "Import CSV" %>
   <% end %>
   
-</br>
 
-<%= link_to 'Download Most Recent Import - Failed Records (CSV)', faileds_path(format: :csv) %></br>
-<%= link_to 'Download Most Recent Import - Successful Records (CSV)', imports_path(format: :csv) %>
 
+<%= link_to 'Download Most Recent Import - Failed Records (CSV)', 'fails.csv', download: 'failed_validation' %> </br>
+<%= link_to 'Download Most Recent Import - Successful Records (CSV)', 'fails.csv', download: 'succeeded_validation' %>
