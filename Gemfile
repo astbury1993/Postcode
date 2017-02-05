@@ -12,6 +12,7 @@ end
 group :production do
 gem 'pg'
 gem 'puma'
+gem 'puma-heroku'
 gem 'puma_worker_killer'
 end
 
