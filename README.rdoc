@@ -3,8 +3,6 @@
 This repository is for a postcode data import program with validation of format. 
 
 
-
-
 More Details:
 
 Configuration:
@@ -14,3 +12,9 @@ ruby 2.2.2p95 (2015-04-13 revision 50295) [x86_64-darwin12.0]
 The front end is a simple web app that will allow you to upload the postcode.csv.gv file provided. It will then import the records into the two models; import and failed. 
 At this same point, it will generate csv for failed and successful imports which will then become available for download.
 
+This is currently being hosted on:
+https://postcodeimport-ca.herokuapp.com/
+
+I do have an issue currently with heroku though due to the Dynos being used. As I am not a paying customer, my memory usage is capped and due to the high memory usage during the import, this fails. There are ways around this but unfortunately, I have not yet applied the fixes due to time constraints. The application does work locally should you get the application error on Heroku.
+
+The CSVs are still created and available for download on heroku.
